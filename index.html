@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherSphere</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="backgroundLayer"></div>
+    <div id="weatherEffects"></div>
+    <div id="cloudLayer"></div>
+    
+    <main>
+
+   <div id="loadingScreen" class="loading-screen hidden">
+
+    <div class="loader"></div>
+
+    <p>Loading Weather...</p>
+
+</div>
+
+<section class="hero">
+
+    <div class="space-background"></div>
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <section class="search-section">
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search City">
+
+        <button id="searchBtn">
+
+            🔍
+
+        </button>
+
+    </div>
+
+</section>
+    <div class="hero-wrapper">
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-panel">
+
+          <section class="weather-details">
+
+    <h2 class="details-title">Weather Details</h2>
+
+    <div class="detail-row">
+        <span><i class="fa-solid fa-droplet"></i> Humidity</span>
+        <p id="humidity">--</p>
+    </div>
+
+    <div class="detail-row">
+        <span><i class="fa-solid fa-wind"></i> Wind</span>
+        <p id="windSpeed">--</p>
+    </div>
+
+    <div class="detail-row">
+        <span><i class="fa-solid fa-eye"></i> Visibility</span>
+        <p id="visibility">--</p>
+    </div>
+
+    <div class="detail-row">
+        <span><i class="fa-solid fa-sun"></i> Sunrise</span>
+        <p id="sunrise">--</p>
+    </div>
+
+    <div class="detail-row">
+        <span><i class="fa-solid fa-moon"></i> Sunset</span>
+        <p id="sunset">--</p>
+    </div>
+
+</section>
+
+        </div>
+
+        <!-- CENTER -->
+
+        <div class="earth-container">
+
+            <img src="e.png" id="earth" alt="Earth">
+
+            <div class="orbit">
+
+                <img id="weatherIcon" src="" alt="Weather Icon">
+
+                <h1 id="temperature">--°</h1>
+
+                <h2 id="weatherCondition">Weather</h2>
+
+                <h3 id="cityName">City</h3>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+       <div class="right-panel">
+
+    <div class="greeting-box">
+
+        <h2 id="greeting">
+            Good Morning ☀️
+        </h2>
+
+        <p id="greetingMessage">
+            Have a wonderful day!
+        </p>
+
+    </div>
+
+    <div class="extra-weather">
+
+        <div class="extra-item">
+
+            <h4>Feels Like</h4>
+
+            <p id="feelsLike">--°</p>
+
+        </div>
+
+        <div class="extra-item">
+
+            <h4>Air Quality</h4>
+
+            <p id="aqi">--</p>
+
+        </div>
+        <div class="extra-item">
+
+    <h4>Pressure</h4>
+
+    <p id="pressure">--</p>
+
+</div>
+
+<div class="extra-item">
+
+    <h4>UV Index</h4>
+
+    <p id="uvIndex">--</p>
+
+</div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+    
+<section class="forecast-section">
+
+    <h2>Weekly Forecast</h2>
+
+    <div id="forecastCards" class="forecast-cards">
+
+    </div>
+
+</section>
+</main>
+
+<script type="module" src="main.js"></script>
+
+</body>
+
+</html>
