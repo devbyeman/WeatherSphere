@@ -32,7 +32,7 @@ It provides weather information through a weather API and presents the data in a
 
 ## 📸 Project Preview
 
-![WeatherSphere Preview](e.png)
+![WeatherSphere Preview](weather-sphere-preview.png)
 
 ## 🎯 What I Learned
 
